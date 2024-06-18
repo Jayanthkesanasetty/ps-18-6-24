@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-6-24</title>
+</head>
+<body>
+    <center><h1>TASK ON 18-6-24</h1></center> <hr>
+    <pre style="font-size: larger;">
+       1. Write a js program to print lower case first followed by upper case letters.
+       
+       -------code--------
+        s=prompt("ENTER STRING: ");
+        lower="" ,upper="";tot=""
+        for(i=0;i< s.length;i++)
+        {
+            if(s.charCodeAt(i)>=65 && s.charCodeAt(i)<=90){
+            upper+=s[i]   
+            }
+            if(s.charCodeAt(i)>=95 && s.charCodeAt(i)<=122){
+            lower+=s[i]
+            }
+        }
+        console.log(lower+upper)
+
+        ------output--------
+        ENTER STRING: I am Good
+        amoodIG
+        
+
+        2.Write a js program to print one lower letter next one upper letter and so.. on.
+
+        -------code--------
+        s=prompt("ENTER STRING: ");
+        lower="" ,upper="";tot=""
+        for(i=0;i< s.length;i++)
+        {
+            if(s.charCodeAt(i)>=65 && s.charCodeAt(i)<=90){
+            upper+=s[i]   
+            }
+            if(s.charCodeAt(i)>=95 && s.charCodeAt(i)<=122){
+            lower+=s[i]
+            }
+        }      
+        for(j=0;j<(lower+upper).length;j++){
+            if(lower[j]!=undefined)
+            tot+=lower[j]
+        if(upper[j]!=undefined)
+            tot+=upper[j]
+        }
+        console.log(tot)
+
+        ------output--------
+        ENTER STRING: I am Good
+        aImGood
+    </pre>
+    <script>
+// s=prompt("ENTER STRING: ");
+// lower="" ,upper="";tot=""
+// for(i=0;i<s.length;i++){
+//      if(s.charCodeAt(i)>=65 && s.charCodeAt(i)<=90){
+//       upper+=s[i]   
+//      }
+//      if(s.charCodeAt(i)>=95 && s.charCodeAt(i)<=122){
+//     lower+=s[i]
+//     }
+// }
+// console.log(lower+upper)
+
+
+
+// for(j=0;j<(lower+upper).length;j++){
+//         if(lower[j]!=undefined)
+//         tot+=lower[j]
+//     if(upper[j]!=undefined)
+//         tot+=upper[j]
+// }
+// console.log(tot)
+    </script>
+</body>
+</html>
